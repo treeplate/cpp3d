@@ -1,10 +1,2 @@
-GraphicsEngine.obj
-SwapChain.obj
-main.obj
-AppWindow.obj
-DeviceContext.obj
-VertexBuffer.obj
-ConstantBuffer.obj
-VertexShader.obj
-PixelShader.obj
-WindowingSystem.obj
+*.obj
+*.pdb
