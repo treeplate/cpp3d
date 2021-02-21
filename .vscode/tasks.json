@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: cl.exe build active file",
+            "command": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.27.29110\\bin\\Hostx86\\x86\\cl.exe",
+            "args": [
+                "/Zi",
+                "/EHsc",
+                "/Fe:",
+                "${workspaceFolder}\\bin\\app.exe",
+                "${workspaceFolder}\\app\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\SwapChain\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\DeviceContext\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\VertexBuffer\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\ConstantBuffer\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\VertexShader\\*.cpp",
+                "${workspaceFolder}\\engine\\GraphicsEngine\\PixelShader\\*.cpp",
+                "${workspaceFolder}\\engine\\WindowingSystem\\*.cpp"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$msCompile"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
